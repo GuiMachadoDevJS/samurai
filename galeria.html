@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Galeria — Samurai Treinamento e Proteção</title>
+  <meta name="description" content="Fotos e vídeos dos treinamentos — Samurai Treinamento e Proteção"/>
+  <link rel="preload" href="assets/logo.jpeg" as="image">
+  <link rel="stylesheet" href="galeria.css">
+</head>
+<body>
+  <!-- Topbar minimalista com marca e ações -->
+  <header class="gl-header">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="Voltar ao site">
+        <img src="assets/logo.jpeg" alt="Logo Samurai" width="40" height="40">
+        <span>
+          <b>Samurai</b>
+          <small>Treinamento e Proteção</small>
+        </span>
+      </a>
+
+      <nav class="gl-actions">
+        <a class="btn-ghost" href="index.html">Voltar ao site</a>
+        <a class="btn" target="_blank" rel="noopener"
+           href="https://wa.me/5511996592584?text=Ol%C3%A1%2C%20vim%20da%20Galeria%20e%20quero%20saber%20mais%20sobre%20os%20treinamentos.">
+          WhatsApp
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero enxuto -->
+  <section class="gl-hero">
+    <div class="wrap">
+      <h1>Galeria</h1>
+      <p class="lead">Registros reais de treinos, cenários e bastidores.</p>
+      <div class="toolbox">
+        <div class="filters" role="tablist" aria-label="Filtros">
+          <button class="tab active" data-filter="all"   role="tab" aria-selected="true">Todos</button>
+          <button class="tab"        data-filter="image" role="tab">Fotos</button>
+          <button class="tab"        data-filter="video" role="tab">Vídeos</button>
+        </div>
+        <div class="search">
+          <input id="q" type="search" placeholder="Pesquisar por nome (ex.: 'patrulha')" aria-label="Pesquisar">
+        </div>
+      </div>
+      <small id="count" class="count">0 itens</small>
+    </div>
+  </section>
+
+  <!-- Grade -->
+  <main class="gl-main">
+    <div class="wrap">
+      <div id="grid" class="grid" aria-live="polite"></div>
+    </div>
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" hidden aria-hidden="true">
+    <button class="lb-close" aria-label="Fechar">&times;</button>
+    <figure class="lb-frame">
+      <img id="lbImg" alt="" hidden>
+      <video id="lbVid" controls hidden playsinline></video>
+      <figcaption id="lbCap"></figcaption>
+    </figure>
+    <button class="lb-nav prev" aria-label="Anterior">&#10094;</button>
+    <button class="lb-nav next" aria-label="Próximo">&#10095;</button>
+  </div>
+
+  <script src="galeria.js"></script>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Samurai Treinamento e Proteção</title>
+
+  <!-- Meta SEO básica -->
+  <meta name="description" content="Treinamentos de proteção e segurança com foco na prática real. Sua tranquilidade, nossa missão." />
+  <meta name="theme-color" content="#0d1117" />
+
+  <!-- Open Graph / Twitter (compartilhamento) -->
+  <meta property="og:title" content="Samurai Treinamento e Proteção" />
+  <meta property="og:description" content="Treinamentos de proteção para a vida real. Sua tranquilidade, nossa missão." />
+  <meta property="og:image" content="assets/imgbr.jpeg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Pré-carregar poster do herói para sensação de velocidade -->
+  <link rel="preload" href="assets/imgbr.jpeg" as="image" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="shortcut icon" href="assets/logo.jpeg" type="image/x-icon">
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+<!-- BRAND sofisticada (logo + título + ícones) -->
+<div class="brand brand-card">
+  <!-- link do início (logo em moldura + título em duas linhas) -->
+  <a class="brand-home" href="#home" aria-label="Samurai - início">
+    <span class="brand-mark">
+      <img src="assets/logo.jpeg" alt="Logo Samurai Treinamento e Proteção">
+    </span>
+    <span class="brand-title">
+      <strong class="brand-name">Samurai</strong>
+      <span class="brand-sub">Treinamento e Proteção</span>
+    </span>
+  </a>
+
+  <!-- divisor fino entre título e ícones -->
+  <span class="brand-divider" aria-hidden="true"></span>
+
+  <!-- ícones -->
+  <div class="brand-social" aria-label="Redes e contato">
+    <!-- Instagram -->
+    <a class="is-insta" href="https://www.instagram.com/samuraitreinamentoprotecao"
+     target="_blank" rel="noopener" aria-label="Instagram">
+    <img src="assets/instagram.svg.svg" alt="Instagram" class="brand-icon">
+  </a>
+
+    <!-- Gmail (outline) -->
+    <a class="is-mail" href="mailto:samuraitreinamentoprotecao@gmail.com"
+       aria-label="Enviar e-mail">
+      <img src="assets/gmail.svg" alt="Gmail" class="brand-icon">
+    </a>
+
+    <!-- WhatsApp (outline limpo) -->
+    <a class="is-wa" data-cta="header" href="#" aria-label="WhatsApp">
+      <img src="assets/whatsapp.svg" alt="WhatsApp" class="brand-icon">
+    </a>
+  </div>
+</div>
+
+      <!-- botão do menu mobile -->
+      <button class="nav-toggle" aria-controls="nav" aria-expanded="false" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="nav" class="nav">
+        <!-- âncoras com scroll suave + scrollspy no JS -->
+        <a href="#treinamentos">Treinamentos</a>
+        <a href="#metodologia">Metodologia</a>
+        <a href="#instrutor">Instrutor</a>
+        <a href="#depoimentos">Depoimentos</a>
+ <a href="galeria.html">Galeria</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== HERO===================== -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <!-- Coluna de texto -->
+      <div class="hero-copy">
+        <h1>Proteção que nasce da prática real</h1>
+        <p class="lead">“Sua tranquilidade, nossa missão.”</p>
+
+        <ul class="badges">
+          <li>Desde 2006</li>
+          <li>Guarulhos & Grande SP</li>
+        </ul>
+
+        <div class="actions">
+          <a class="btn btn-lg" data-cta="hero" href="#" rel="noopener">Falar no WhatsApp</a>
+          <a class="btn btn-ghost" href="#treinamentos">Ver treinamentos</a>
+        </div>
+      </div>
+
+      <!-- Coluna do vídeo emoldurado (sem cortar, sem perder qualidade) -->
+      <div class="frame-video fill">
+        <video class="hero-video" autoplay muted loop playsinline preload="metadata"
+               poster="">
+          <source src="assets/instruction.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TREINAMENTOS ===================== -->
+  <section id="treinamentos" class="section">
+    <div class="container">
+      <header class="section-head">
+        <h2>Treinamentos e serviços</h2>
+        <p>Protocolos testados em campo, didática direta e resultados mensuráveis.</p>
+      </header>
+
+      <div class="grid-cards">
+        <!-- 1 -->
+        <article class="card" data-topic="Proteção Pessoal / VIP">
+          <div class="card-icn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l7 3v6c0 5-3.5 9.74-7 11-3.5-1.26-7-6-7-11V5l7-3z"/></svg>
+          </div>
+          <h3>Proteção Pessoal / VIP</h3>
+          <p>Planejamento, conduta preventiva, leitura de ambiente, deslocamentos e protocolos de reação.</p>
+        </article>
+
+        <!-- 2 -->
+        <article class="card" data-topic="Prevenção e Resposta a Incidentes">
+          <div class="card-icn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1010 10h-2A8 8 0 1112 4V2zm1 9h7v2h-7v7h-2v-7H4v-2h7V4h2v7z"/></svg>
+          </div>
+          <h3>Prevenção & Resposta a Incidentes</h3>
+          <p>Procedimentos para empresas, escolas e eventos. Simulações e planos de ação.</p>
+        </article>
+
+        <!-- 3 -->
+        <article class="card" data-topic="Táticas Urbanas (Profissionais)">
+          <div class="card-icn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 11c1.66 0 3-1.57 3-3.5S17.66 4 16 4s-3 1.57-3 3.5S14.34 11 16 11zM8 11c1.66 0 3-1.57 3-3.5S9.66 4 8 4 5 5.57 5 7.5 6.34 11 8 11zm0 2c-2.67 0-8 1.34-8 4v2h10v-2c0-1.48.75-2.75 1.92-3.66C10.99 12.5 9.62 13 8 13zm8 0c-.9 0-1.72.12-2.44.33C15.5 14.18 16 15.03 16 16v2h8v-2c0-2.66-5.33-4-8-4z"/></svg>
+          </div>
+          <h3>Táticas Urbanas (Profissionais)</h3>
+          <p>Conteúdos regulados, destinados a profissionais habilitados. Ética, legalidade e segurança.</p>
+        </article>
+
+        <!-- 4 -->
+        <article class="card" data-topic="Primeiros Socorros (TCCC básico)">
+          <div class="card-icn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10a4 4 0 014 4v10a4 4 0 01-4 4H7a4 4 0 01-4-4V7a4 4 0 014-4zm4 4v3H8v4h3v3h2v-3h3V10h-3V7h-2z"/></svg>
+          </div>
+          <h3>Primeiros Socorros (TCCC básico)</h3>
+          <p>Protocolo essencial, controle de cena e estabilização até o atendimento especializado.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== METODOLOGIA ===================== -->
+  <section id="metodologia" class="section alt">
+    <div class="container">
+      <header class="section-head">
+        <h2>Metodologia</h2>
+        <p>Do campo para a sala de aula: realismo, repetição estruturada e avaliação mensurável.</p>
+      </header>
+
+      <ol class="steps">
+        <li><span>1</span><h3>Realismo</h3><p>Cenários fiéis, protocolos aplicáveis e foco em prevenção.</p></li>
+        <li><span>2</span><h3>Repetição</h3><p>Treinos curtos e frequentes para retenção e reflexos corretos.</p></li>
+        <li><span>3</span><h3>Medição</h3><p>Checklist de competências e feedback objetivo.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===================== INSTRUTOR (bio do Fabiano) ===================== -->
+  <section id="instrutor" class="section">
+    <div class="container instructor">
+      <!-- moldura que mantém a imagem inteira (contain, sem crop) -->
+      <figure class="portrait">
+        <img src="assets/imgbr.jpeg" alt="Instrutor Fabiano em contexto operacional" loading="lazy">
+      </figure>
+
+      <div class="bio">
+        <h2>Quem conduz</h2>
+        <h3>Fabiano — Instrutor</h3>
+
+       <p>
+  Fabiano possui <strong>oito anos de Exército Brasileiro (CAvEx)</strong>, período em que realizou estágios e diversos cursos operacionais,
+  encerrando a carreira militar na graduação de <strong>Cabo</strong>.
+</p>
+<p>
+  Na <strong>segurança privada</strong>, atuou na segurança patrimonial (<strong>Protege</strong>) e na <strong>escolta armada</strong>, consolidando sua especialização na área.
+  Posteriormente ingressou na <strong>segurança pública</strong> e, atualmente, integra um <strong>grupamento tático (ROMU)</strong>, mantendo formação continuada em cursos como
+  <strong>Conduta de Patrulha</strong>, <strong>Operações em Área de Risco</strong>, <strong>APH Tático</strong> e <strong>Combate em Baixa Luminosidade</strong>, entre outros.
+  Seu treinamento mais recente foi o <strong>11º PATAMO</strong>, concluído com êxito — <strong>RAIO 201</strong>.
+</p>
+
+
+        <ul class="ticks">
+          <li>Conteúdo vindo da prática real;</li>
+          <li>Didática direta e objetiva;</li>
+          <li>Respeito à legalidade e à ética.</li>
+        </ul>
+
+        <div class="actions">
+          <a class="btn" data-cta="instrutor" href="#" rel="noopener">Falar com o Instrutor</a>
+          <a class="btn btn-ghost" href="#faq">Perguntas frequentes</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DEPOIMENTOS ===================== -->
+  <section id="depoimentos" class="section alt">
+    <div class="container">
+      <header class="section-head">
+        <h2>O que dizem</h2>
+        <p>Feedbacks de quem já treinou com a gente.</p>
+      </header>
+
+      <div class="quotes">
+        <blockquote>“Treino prático e direto. Em um dia já saí com protocolos claros para minha equipe.” <cite>— Síndico, Guarulhos</cite></blockquote>
+        <blockquote>“Didática excelente e exemplos do mundo real. Mudou nossa cultura de prevenção.” <cite>— Coord. de Segurança, Escola</cite></blockquote>
+        <blockquote>“Conteúdo que todo operador deveria dominar. Sem firula e com responsabilidade.” <cite>— Profissional de Segurança</cite></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section id="faq" class="section">
+    <div class="container">
+      <header class="section-head">
+        <h2>FAQ</h2>
+        <p>Perguntas comuns sobre formatos, certificados e requisitos.</p>
+      </header>
+
+      <div class="faq">
+        <details><summary>Quem pode participar?</summary><p>Módulos para empresas e público geral. Conteúdos regulados são exclusivos a profissionais habilitados.</p></details>
+        <details><summary>Emitimos certificado?</summary><p>Sim. Com carga horária, conteúdos e avaliação prática quando aplicável.</p></details>
+        <details><summary>Onde atendemos?</summary><p>Guarulhos e Grande SP. Outras regiões, sob consulta.</p></details>
+        <details><summary>Valores e agenda</summary><p>In-company, turmas abertas e imersões. Solicite proposta pelo WhatsApp.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA FINAL ===================== -->
+  <section class="section cta">
+    <div class="container cta-box">
+      <h2>Pronto para elevar o nível de proteção?</h2>
+      <p class="lead">“Sua tranquilidade, nossa missão.”</p>
+      <a class="btn btn-lg" data-cta="final" href="#" rel="noopener">Conversar no WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer class="site-footer">
+  <!-- fileira principal -->
+  <div class="container foot-grid">
+    <!-- coluna: marca -->
+    <div class="foot-brand">
+      <span class="foot-mark">
+        <img src="assets/logo.jpeg" alt="Logo Samurai" width="44" height="44">
+      </span>
+      <div>
+        <strong>Samurai Treinamento e Proteção</strong>
+        <small>Guarulhos • SP</small>
+        <p class="foot-slogan">“Sua tranquilidade, nossa missão.”</p>
+      </div>
+    </div>
+
+    <!-- coluna: navegação -->
+    <nav class="foot-col">
+      <h4>Navegação</h4>
+      <ul>
+        <li><a href="#treinamentos">Treinamentos</a></li>
+        <li><a href="#metodologia">Metodologia</a></li>
+        <li><a href="#instrutor">Instrutor</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <a href="galeria.html">Galeria</a>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+
+    <!-- coluna: contato -->
+    <div class="foot-col">
+      <h4>Contato</h4>
+      <ul>
+        <li><a href="mailto:samuraitreinamentoprotecao@gmail.com">samuraitreinamentoprotecao@gmail.com</a></li>
+        <li><a href="https://www.instagram.com/samuraitreinamentoprotecao" target="_blank" rel="noopener">@samuraitreinamentoprotecao</a></li>
+        <li><a data-cta="footer" href="#" rel="noopener">WhatsApp</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- faixa inferior -->
+  <div class="foot-bottom">
+    <small>© <span id="year"></span> Samurai Treinamento e Proteção</small>
+    <a href="https://www.linkedin.com/in/guimachadodev/" target="_blank" rel="pelegrinoPage" class="credit">
+    <small>Desenvolvido por <b>G. Pelegrino</b></small>
+    </a>
+  </div>
+</footer>
+
+  <!-- Botão flutuante do WhatsApp (orbe premium + tooltip) -->
+<a class="fab-wa" data-cta="floating" href="#" aria-label="Abrir WhatsApp" rel="noopener">
+  <span class="fab-ring" aria-hidden="true"></span>
+  <!-- Ícone branco nítido (inline) -->
+  <img src="assets/whatsapp.svg" alt="">
+  <span class="fab-tooltip">Falar no WhatsApp</span>
+</a>
+
+
+  <!-- Botão Voltar ao Topo -->
+  <button id="backToTop" aria-label="Voltar ao topo" title="Topo">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l-8 8h5v8h6v-8h5z"/></svg>
+  </button>
+
+  <!-- JSON-LD (dados estruturados básicos) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Samurai Treinamento e Proteção",
+    "description": "Treinamentos de proteção e segurança com foco na prática real.",
+    "areaServed": "Guarulhos e Grande São Paulo",
+    "sameAs": ["https://www.instagram.com/samuraitreinamentoprotecao"],
+    "slogan": "Sua tranquilidade, nossa missão"
+  }
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
